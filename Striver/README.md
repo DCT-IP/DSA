@@ -10,6 +10,6 @@ This repository contains my solutions to **Striver's DSA Sheet**, a curated set 
 
 # 🔹 Structure
 
-- Arrays[curr]
+- Arrays[curr] - 8 questions done
 
 //To be added more
