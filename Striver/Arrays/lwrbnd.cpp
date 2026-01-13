@@ -13,25 +13,23 @@ Explanation: Index 1 is the smallest index such that arr[1] >= x
 */
 #include <iostream>
 using namespace std;
-int main(){
+int main() {
     int arr[] = {1,2,2,3}, target = 2;
     int len = sizeof(arr)/sizeof(int);
-    int temp = len-1, start = 0, ans = -1;
-    while(start<=temp){
-        int med = (temp+start)/2;
-        if(arr[med]==target){
-            ans = med;
-            break;
-        } else if(target < arr[med]){
-            temp = med-1;
+    int start = 0, temp = len - 1;
+    int ans = -1;
+    while (start <= temp) {
+        int mid = start + (temp - start) / 2;
+        if (arr[mid] >= target) {
+            ans = mid;        // possible lower bound
+            temp = mid - 1;   // search left
         } else {
-            start = med+1;
+            start = mid + 1;
         }
     }
-    if(ans==-1){
+    if (ans == -1)
         cout << "not found!" << endl;
-    } else {
-        cout << "found at: "<<ans << endl;
-    }
+    else
+        cout << "lower bound at: " << ans << endl;
 }
 //used binary sorting to sort to increase difficulty and due to module named such
