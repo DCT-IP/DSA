@@ -11,5 +11,5 @@ This repository contains my solutions to **Striver's DSA Sheet**, a curated set 
 # 🔹 Structure
 
 - Arrays - 15 questions done
-
+- Strings - 1 question done
 //To be added more
