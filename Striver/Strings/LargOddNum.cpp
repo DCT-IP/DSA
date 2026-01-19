@@ -10,14 +10,23 @@ Output:
  "5347
 */
 #include <iostream>
+#include <string>
 using namespace std;
 int main(){
-    string num = "54320";
-    int len = size(num);
-    for(int i = len; i < -1;i++){
-        if(num[i] % 2==0){
-            //tbd
+    string num = "08734521056";
+    int len = num.size();int end = -1, strt = -1;
+    for(int i = len-1; i >= 0;i--){
+        if((num[i] - '0') % 2 != 0){
+            end = i;
+            break;
         }
     }
+    for(int i = 0;i < len;i++){
+        if(num[i]!= '0'){
+            strt = i; break;
+        }
+    }
+    string s = num.substr(strt,end+1-strt);
+    cout << s;
     return 0;
 }
