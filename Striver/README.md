@@ -2,14 +2,14 @@
 
 This repository contains my solutions to **Striver's DSA Sheet**, a curated set of problems designed to strengthen problem-solving skills in **Data Structures and Algorithms (DSA)**.
 
-## 📚 Overview
+##  Overview
 
 - Implemented in **C++** (can add other languages later)
 - Covers all problem categories: **Arrays, Strings, Linked Lists, Trees, Graphs, Dynamic Programming**, and more
 - Helps improve **problem-solving skills, coding efficiency, and DSA understanding**
 
-# 🔹 Structure
-
-- Arrays - 15 questions done
+## Structure
+- Arrays - 16 questions done
 - Strings - 5 questions done
-//To be added more
+- Linked List - 1 questions done 
+To be added more
