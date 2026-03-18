@@ -6,16 +6,26 @@ output: 0,1,2,3,5,6,7,8
 */
 #include <bits/stdc++.h>
 using namespace std;
-int main(){
-    int arr[] = {5,2,1}, count = 0;
+
+int main() {
+    int arr[] = {5,2,1};
     int len = sizeof(arr)/sizeof(arr[0]);
-    int len_real = int(pow(2,len));
-    int ans[len_real];
-    ans[0] = 0; count++;
-    for(int i = 0;i<len;i++){
-        ans[i+1] = arr[0];
+
+    int total = 1 << len; // 2^n
+
+    for(int mask = 0; mask < total; mask++) {
+        int sum = 0;
+
+        for(int i = 0; i < len; i++) {
+            if(mask & (1 << i)) {
+                sum += arr[i];
+            }
+        }
+
+        cout << sum << " ";
     }
-    //to be done later
+
+    return 0;
 }
 
 /*
