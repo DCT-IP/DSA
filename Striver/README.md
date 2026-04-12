@@ -13,4 +13,4 @@ This repository contains my solutions to **Striver's DSA Sheet**, a curated set 
 - Strings - 5 questions done
 - Linked List - 15 questions done 
 - Recursion - 3 questions done
-- Bit Manipulation - 7 questions done
+- Bit Manipulation - 8 questions done
